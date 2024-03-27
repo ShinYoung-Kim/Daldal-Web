@@ -1,7 +1,6 @@
-import dayjs from 'dayjs';
-
 import { Point } from '@models/point/entity/point';
 import { KoRefundStatus } from '@type/refundStatus';
+import dayjs from 'dayjs';
 
 export const changeNumberIntoStringWithComma = (point: number) => {
 	return new Intl.NumberFormat().format(point);

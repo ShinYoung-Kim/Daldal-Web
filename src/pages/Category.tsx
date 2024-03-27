@@ -1,5 +1,3 @@
-import { Preloader } from 'konsta/react';
-
 import { SearchTextField } from '@components/atoms';
 import { SvgIcon } from '@components/common';
 import { ProductCardList } from '@components/organisms';
@@ -8,6 +6,7 @@ import colors from '@constants/colors';
 import { useGetProductSimpleList } from '@hooks/apis/product';
 import useIntersection from '@hooks/infiniteScroll';
 import PageLayout from '@layouts/PageLayout';
+import { Preloader } from 'konsta/react';
 import { useParams } from 'react-router-dom';
 
 type CategoryParams = {

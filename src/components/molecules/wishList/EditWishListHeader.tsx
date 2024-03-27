@@ -1,6 +1,5 @@
-import { Button } from 'konsta/react';
-
 import { useWishListEditStore, useWishListStore } from '@stores/wishListStore';
+import { Button } from 'konsta/react';
 
 const EditWishListHeader = () => {
 	const setWishListStatus = useWishListStore(state => state.setWishListStatus);

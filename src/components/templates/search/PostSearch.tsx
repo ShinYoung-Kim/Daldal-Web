@@ -1,11 +1,10 @@
-import { Preloader } from 'konsta/react';
-
 import { SearchTextField } from '@components/atoms';
 import { PostSearchHeader } from '@components/molecules';
 import { ProductCardList } from '@components/organisms';
 import { useSearch } from '@hooks/apis/search';
 import useIntersection from '@hooks/infiniteScroll';
 import { SearchQuery } from '@type/searchQuery';
+import { Preloader } from 'konsta/react';
 
 type PostSearchProps = {
 	searchQuery: SearchQuery;

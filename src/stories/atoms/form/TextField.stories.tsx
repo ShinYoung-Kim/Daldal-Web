@@ -1,7 +1,6 @@
-import * as z from 'zod';
-
 import { Form } from '@components/atoms';
 import { accountSchema, pointSchema } from '@type/form';
+import * as z from 'zod';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

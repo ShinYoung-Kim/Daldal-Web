@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import { BuyWithLikeButton, CardInfo } from '@components/atoms';
 import { SmallProductDetailImageSlider } from '@components/molecules';
 import { ImageSliderContainer } from '@components/organisms';
@@ -10,6 +8,7 @@ import { useBuyButtonStore } from '@stores/buyButtonStore';
 import { useBottomSheetStore } from '@stores/layerStore';
 import { useProductStore } from '@stores/productStore';
 import { getYoutubeIdFromUrl } from '@utils/formatData';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import YouTube from 'react-youtube';
 

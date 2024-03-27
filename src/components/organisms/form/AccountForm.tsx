@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-
 import { Form } from '@components/atoms';
 import { useAccountInfoStore } from '@stores/formInfoStore';
 import { FormType, accountSchema } from '@type/form';
+import { useEffect } from 'react';
 
 type AccountFormProps = {
 	disabled?: boolean;

@@ -1,7 +1,6 @@
-import { ReactNode } from 'react';
-
 import { ApprovedTag, NotApprovedTag, ProgressTag } from '@components/atoms';
 import { RefundStatus } from '@type/refundStatus';
+import { ReactNode } from 'react';
 
 type StatusValueType = {
 	[K in RefundStatus]: ReactNode;

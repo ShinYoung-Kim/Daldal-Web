@@ -1,10 +1,9 @@
-import { KonstaProvider, Preloader } from 'konsta/react';
-import { Suspense } from 'react';
-
 import Error from '@pages/Error';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ComponentWithProps } from '@type/providerTree';
 import { buildProvidersTree } from '@utils/buildProvidersTree';
+import { KonstaProvider, Preloader } from 'konsta/react';
+import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter } from 'react-router-dom';
 

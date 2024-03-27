@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import {
 	Dialog,
 	DialogContent,
@@ -10,6 +8,7 @@ import {
 	DialogFooter,
 } from '@components/ui/dialog';
 import { useModalStore } from '@stores/layerStore';
+import { ReactNode } from 'react';
 
 export type ModalProps = {
 	title: string;

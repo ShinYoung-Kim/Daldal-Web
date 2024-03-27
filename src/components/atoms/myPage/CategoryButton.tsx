@@ -1,8 +1,7 @@
-import { Button } from 'konsta/react';
-
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
 import { IconId } from '@type/svgIcon';
+import { Button } from 'konsta/react';
 
 type CategoryButtonProps = {
 	iconId?: IconId;

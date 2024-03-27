@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
-
 import notificationImg from '@assets/images/notification.png';
 import { ProgressBar } from '@components/index';
 import ClearLayout from '@layouts/ClearLayout';
 import { useProductStore } from '@stores/productStore';
+import { useEffect, useState } from 'react';
 
 const Notification = () => {
 	const [state, setState] = useState({

@@ -1,7 +1,6 @@
-import { Button } from 'konsta/react';
-
 import { SvgIcon } from '@components/common';
 import svgIcon from '@type/svgIcon';
+import { Button } from 'konsta/react';
 
 type IconButtonProps = {
 	className?: string;

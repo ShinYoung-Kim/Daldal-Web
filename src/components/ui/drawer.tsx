@@ -1,6 +1,5 @@
-import * as React from 'react';
-
 import { cn } from '@utils/shadcn';
+import * as React from 'react';
 import { Drawer as DrawerPrimitive } from 'vaul';
 
 const Drawer = ({

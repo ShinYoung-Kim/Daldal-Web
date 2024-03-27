@@ -1,11 +1,10 @@
-import { useEffect } from 'react';
-
 import { DefaultButton, RequestLeaveModalButton } from '@components/atoms';
 import { DisabledAccountForm } from '@components/organisms';
 import { usePatchAccountIfo } from '@hooks/apis/account';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import PageLayout from '@layouts/PageLayout';
 import { useAccountInfoStore } from '@stores/formInfoStore';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const SaveAccountInfo = () => {

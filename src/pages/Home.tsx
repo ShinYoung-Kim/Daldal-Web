@@ -1,6 +1,3 @@
-import { Preloader } from 'konsta/react';
-import { useEffect } from 'react';
-
 import { SearchTextField } from '@components/atoms';
 import { CategoryButtonList } from '@components/molecules';
 import {
@@ -12,6 +9,8 @@ import { useGetProductSimpleList } from '@hooks/apis/product';
 import useIntersection from '@hooks/infiniteScroll';
 import PageLayout from '@layouts/PageLayout';
 import { setAccessToken, setRefreshToken } from '@utils/localStorage/token';
+import { Preloader } from 'konsta/react';
+import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 const Home = () => {

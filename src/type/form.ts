@@ -1,6 +1,5 @@
-import * as z from 'zod';
-
 import { getHeldPoint } from '@utils/localStorage/point';
+import * as z from 'zod';
 
 export const pointSchema = z.object({
 	POINT: z

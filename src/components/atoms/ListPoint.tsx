@@ -1,11 +1,10 @@
-import { Block, Button } from 'konsta/react';
-
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
 import koRefundStatus from '@constants/koRefundStatus';
 import { PointHistory } from '@models/point/entity/point';
 import { KoRefundStatus } from '@type/refundStatus';
 import { getDataInYYYYMMDDSplitedByDot, getPointText } from '@utils/formatData';
+import { Block, Button } from 'konsta/react';
 import { useNavigate } from 'react-router-dom';
 
 type ListPointProps = PointHistory;

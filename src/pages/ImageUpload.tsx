@@ -1,10 +1,9 @@
-import { Preloader } from 'konsta/react';
-
 import { ImageUploadButton } from '@components/atoms';
 import { ImageContainer } from '@components/molecules';
 import { useGetImageUploadSimpleList } from '@hooks/apis/imageUpload';
 import useIntersection from '@hooks/infiniteScroll';
 import PageLayout from '@layouts/PageLayout';
+import { Preloader } from 'konsta/react';
 import { useNavigate } from 'react-router-dom';
 
 const ImageUpload = () => {

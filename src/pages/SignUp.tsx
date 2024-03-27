@@ -1,5 +1,3 @@
-import { Button } from 'konsta/react';
-
 import {
 	AppleLoginButton,
 	KakaoLoginButton,
@@ -8,6 +6,7 @@ import {
 import { SvgIcon } from '@components/common';
 import { LoginImageSlider } from '@components/molecules';
 import ClearLayout from '@layouts/ClearLayout';
+import { Button } from 'konsta/react';
 import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {

@@ -1,6 +1,5 @@
-import { Button } from 'konsta/react';
-
 import { useWishListStore } from '@stores/wishListStore';
+import { Button } from 'konsta/react';
 
 const DefaultWishListHeader = () => {
 	const setWishListStatus = useWishListStore(state => state.setWishListStatus);

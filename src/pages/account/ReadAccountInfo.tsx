@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
-
 import { PreEditAccount, PreRegisterAccount } from '@components/templates';
 import { useGetAccountInfo } from '@hooks/apis/account';
 import PageLayout from '@layouts/PageLayout';
 import { useAccountInfoStore } from '@stores/formInfoStore';
+import { useEffect } from 'react';
 
 const ReadAccountInfo = () => {
 	const { data: accountInfo } = useGetAccountInfo();

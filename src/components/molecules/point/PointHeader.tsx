@@ -1,11 +1,10 @@
-import { useEffect } from 'react';
-
 import {
 	GroupOrderTextPoint,
 	RequestVerificationButton,
 } from '@components/atoms';
 import { useGetCurrentPoint } from '@hooks/apis/point';
 import { setHeldPoint } from '@utils/localStorage/point';
+import { useEffect } from 'react';
 
 const PointHeader = () => {
 	const { data: totalPoint } = useGetCurrentPoint();

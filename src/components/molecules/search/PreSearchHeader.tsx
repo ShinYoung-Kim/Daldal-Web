@@ -1,6 +1,5 @@
-import { Button } from 'konsta/react';
-
 import { useSearchHistoryStore } from '@stores/searchHistoryStore';
+import { Button } from 'konsta/react';
 
 const PreSearchHeader = () => {
 	const handleDeleteSearchHistory = useSearchHistoryStore(

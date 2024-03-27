@@ -1,15 +1,14 @@
-import axios, {
-	AxiosError,
-	AxiosResponse,
-	InternalAxiosRequestConfig,
-} from 'axios';
-
 import { ApiResponse } from '@type/apiResponse';
 import {
 	getAccessToken,
 	renewAccessToken,
 	renewRefreshToken,
 } from '@utils/localStorage/token';
+import axios, {
+	AxiosError,
+	AxiosResponse,
+	InternalAxiosRequestConfig,
+} from 'axios';
 
 export const api = axios.create({
 	baseURL: import.meta.env.VITE_BASE_URL,

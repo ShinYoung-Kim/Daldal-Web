@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
-
 import { DefaultButton, SvgIcon } from '@components/index';
 import { useGetUserInfo } from '@hooks/apis/auth';
 import ClearLayout from '@layouts/ClearLayout';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import { setAccessToken, setRefreshToken } from '@utils/localStorage/token';
+import { useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 const Welcome = () => {

@@ -1,7 +1,6 @@
-import { ReactNode } from 'react';
-
 import { Header } from '@components/organisms';
 import { LeftHeaderProps } from '@components/organisms/Header';
+import { ReactNode } from 'react';
 
 export type PageLayoutDefaultProps = {
 	children: ReactNode;

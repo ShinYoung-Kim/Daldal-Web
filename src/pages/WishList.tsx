@@ -1,6 +1,3 @@
-import { Preloader } from 'konsta/react';
-import { useEffect } from 'react';
-
 import {
 	DefaultWishList,
 	DefaultWishListWithNoItem,
@@ -10,6 +7,8 @@ import { useGetWishListProductSimpleList } from '@hooks/apis/wishList';
 import useIntersection from '@hooks/infiniteScroll';
 import PageLayout from '@layouts/PageLayout';
 import { useWishListEditStore, useWishListStore } from '@stores/wishListStore';
+import { Preloader } from 'konsta/react';
+import { useEffect } from 'react';
 
 const WishList = () => {
 	const wishListStatus = useWishListStore(state => state.wishListStatus);

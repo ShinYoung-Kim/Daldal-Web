@@ -1,8 +1,7 @@
-import { useEffect, useRef } from 'react';
-
 import { DefaultButton, SvgIcon } from '@components/index';
 import ClearLayout from '@layouts/ClearLayout';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
+import { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 type FallbackProps = {
