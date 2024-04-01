@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { DefaultButton } from '@components/atoms';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
-import { useNavigate } from 'react-router-dom';
 
 const PostWithdrawal = () => {
 	const navigate = useNavigate();

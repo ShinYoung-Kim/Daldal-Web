@@ -1,3 +1,5 @@
+import { InfiniteData, useQueryClient } from '@tanstack/react-query';
+
 import { DefaultButton } from '@components/index';
 import { EditWishListHeader } from '@components/molecules';
 import { ProductCardList } from '@components/organisms';
@@ -5,7 +7,6 @@ import { useDeleteWishItem } from '@hooks/apis/wishList';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import { ProductSimpleListResponseDTO } from '@models/product/response/productSimpleListResponseDTO';
 import { useWishListEditStore, useWishListStore } from '@stores/wishListStore';
-import { InfiniteData, useQueryClient } from '@tanstack/react-query';
 import { ApiResponse } from '@type/apiResponse';
 
 type EditWishListProps = {

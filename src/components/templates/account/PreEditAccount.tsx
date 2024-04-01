@@ -1,8 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+
 import { DefaultButton } from '@components/atoms';
 import { DisabledAccountForm } from '@components/organisms';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import { useAccountInfoStore } from '@stores/formInfoStore';
-import { useNavigate } from 'react-router-dom';
 
 const PreEditAccount = () => {
 	const { accountInfo } = useAccountInfoStore();

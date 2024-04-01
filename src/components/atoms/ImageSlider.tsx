@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react';
+import Slider from 'react-slick';
 
 import { IndexIndicator } from '@components/atoms';
-import Slider from 'react-slick';
 
 import '@styles/slick.css';
 

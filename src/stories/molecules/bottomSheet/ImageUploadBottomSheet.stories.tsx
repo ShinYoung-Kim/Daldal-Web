@@ -1,6 +1,7 @@
+import { Meta, StoryObj } from '@storybook/react';
+
 import { ImageUploadBottomSheet } from '@components/molecules';
 import { useBottomSheetStore } from '@stores/layerStore';
-import { Meta, StoryObj } from '@storybook/react';
 
 const Wrapper = () => {
 	const { openBottomSheet } = useBottomSheetStore();

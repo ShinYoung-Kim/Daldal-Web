@@ -1,5 +1,6 @@
-import { BankButton } from '@components/atoms';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { BankButton } from '@components/atoms';
 
 const meta = {
 	title: 'atoms/myPage/BankButton',

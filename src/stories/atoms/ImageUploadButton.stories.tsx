@@ -1,5 +1,6 @@
-import { ImageUploadButton } from '@components/atoms';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { ImageUploadButton } from '@components/atoms';
 
 const meta = {
 	title: 'atoms/ImageUploadButton',

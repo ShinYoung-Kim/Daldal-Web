@@ -1,11 +1,11 @@
+import { useQueryClient } from '@tanstack/react-query';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Form, RequestLeaveModalButton } from '@components/atoms';
 import { usePostPointWithdraw } from '@hooks/apis/point';
 import { useAccountInfoStore } from '@stores/formInfoStore';
-import { useQueryClient } from '@tanstack/react-query';
 import { FormType, pointSchema } from '@type/form';
-import { useNavigate } from 'react-router-dom';
 
 const ProgressWithdrawal = () => {
 	const { setIsSelectedBankNeeded } = useAccountInfoStore();

@@ -1,5 +1,6 @@
-import { Bar, BarContainer } from '@components/atoms';
 import { useNProgress } from '@tanem/react-nprogress';
+
+import { Bar, BarContainer } from '@components/atoms';
 
 type ProgressBarProps = {
 	isAnimating: boolean;

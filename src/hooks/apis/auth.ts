@@ -1,6 +1,7 @@
+import { useMutation } from '@tanstack/react-query';
+
 import { deleteServiceAccount, getUserInfo, logout } from '@apis/auth';
 import { LogoutRequestDTO } from '@models/auth/request/logoutRequestDTO';
-import { useMutation } from '@tanstack/react-query';
 import { removeServiceAccountCache } from '@utils/localStorage/removeServiceAccountCache';
 import { setProvider, setUserName } from '@utils/localStorage/userInfo';
 

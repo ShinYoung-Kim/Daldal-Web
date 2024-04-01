@@ -1,5 +1,6 @@
-import { Header } from '@components/organisms';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { Header } from '@components/organisms';
 
 const meta = {
 	title: 'organisms/Header',

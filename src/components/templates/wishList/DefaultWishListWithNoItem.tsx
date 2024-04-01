@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { DefaultButton, SvgIcon } from '@components/index';
 import { DefaultWishListHeader } from '@components/molecules';
-import { useNavigate } from 'react-router-dom';
 
 const DefaultWishListWithNoItem = () => {
 	const message = '찜한 상품이 없습니다!\n상품을 둘러보시겠어요?';

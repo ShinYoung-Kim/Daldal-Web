@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { IconButton } from '@components/atoms';
 import colors from '@constants/colors';
-import { useNavigate } from 'react-router-dom';
 
 const LeftBackHeader = () => {
 	const navigate = useNavigate();

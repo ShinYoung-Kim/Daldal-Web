@@ -1,13 +1,14 @@
 import {
-	getImageUploadDetailList,
-	getImageUploadSimpleList,
-	postImageUpload,
-} from '@apis/imageUpload';
-import {
 	useInfiniteQuery,
 	useMutation,
 	useSuspenseQuery,
 } from '@tanstack/react-query';
+
+import {
+	getImageUploadDetailList,
+	getImageUploadSimpleList,
+	postImageUpload,
+} from '@apis/imageUpload';
 
 export const useGetImageUploadSimpleList = () => {
 	return useInfiniteQuery({

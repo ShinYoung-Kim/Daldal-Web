@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { ProductCategoryButton } from '@components/atoms';
 import categoryList from '@constants/categoryList';
-import { useNavigate } from 'react-router-dom';
 
 const CategoryButtonList = () => {
 	const categoyValueList = Object.values(categoryList);

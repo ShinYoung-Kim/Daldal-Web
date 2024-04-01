@@ -1,9 +1,9 @@
+import { useQueryClient } from '@tanstack/react-query';
 import { useCallback, useRef } from 'react';
 
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
 import { usePostImageUpload } from '@hooks/apis/imageUpload';
-import { useQueryClient } from '@tanstack/react-query';
 
 const ImageUploadButton = () => {
 	const inputRef = useRef<HTMLInputElement | null>(null);

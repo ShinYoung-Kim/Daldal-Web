@@ -1,7 +1,8 @@
+import { InfiniteData } from '@tanstack/react-query';
+
 import { DefaultWishListHeader } from '@components/molecules';
 import { ProductCardList } from '@components/organisms';
 import { ProductSimpleListResponseDTO } from '@models/product/response/productSimpleListResponseDTO';
-import { InfiniteData } from '@tanstack/react-query';
 import { ApiResponse } from '@type/apiResponse';
 
 type DefaultWishListProps = {

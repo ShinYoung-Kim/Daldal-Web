@@ -1,10 +1,11 @@
 import { Button } from 'konsta/react';
 import { useEffect } from 'react';
 
-import { SvgIcon } from '@components/common';
-import colors from '@constants/colors';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+
+import { SvgIcon } from '@components/common';
+import colors from '@constants/colors';
 
 type ToastMessageLikeOrDeleteProps = {
 	like: boolean;

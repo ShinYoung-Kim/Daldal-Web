@@ -1,12 +1,12 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { KonstaProvider, Preloader } from 'konsta/react';
 import { Suspense } from 'react';
-
-import Error from '@pages/Error';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ComponentWithProps } from '@type/providerTree';
-import { buildProvidersTree } from '@utils/buildProvidersTree';
 import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter } from 'react-router-dom';
+
+import Error from '@pages/Error';
+import { ComponentWithProps } from '@type/providerTree';
+import { buildProvidersTree } from '@utils/buildProvidersTree';
 
 const queryClient = new QueryClient({
 	defaultOptions: {

@@ -1,8 +1,8 @@
 import { MouseEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { DefaultButton } from '@components/atoms';
 import { useModalStore } from '@stores/layerStore';
-import { useNavigate } from 'react-router-dom';
 
 const RequestLeaveModalButton = () => {
 	const { openModal } = useModalStore();

@@ -1,13 +1,14 @@
 import {
-	deleteWishItem,
-	getWishListProductSimpleList,
-	postWishItem,
-} from '@apis/wishList';
-import {
 	useInfiniteQuery,
 	useMutation,
 	useQueryClient,
 } from '@tanstack/react-query';
+
+import {
+	deleteWishItem,
+	getWishListProductSimpleList,
+	postWishItem,
+} from '@apis/wishList';
 
 export const useGetWishListProductSimpleList = () => {
 	return useInfiniteQuery({

@@ -1,9 +1,10 @@
+import { Meta, StoryObj } from '@storybook/react';
+
 import { PointList } from '@components/molecules';
 import {
 	mockCurrentPointHistory,
 	mockPastPointHistory,
 } from '@mocks/pointList';
-import { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
 	title: 'molecules/groupOrder/PointList',

@@ -1,5 +1,6 @@
-import { ImageContainer } from '@components/molecules';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { ImageContainer } from '@components/molecules';
 
 const meta = {
 	title: 'molecules/ImageContainer',
