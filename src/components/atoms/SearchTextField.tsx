@@ -1,10 +1,10 @@
 import { useState, KeyboardEvent, useEffect } from 'react';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 
 import { IconButton } from '@components/atoms';
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
 import { useSearchHistoryStore } from '@stores/searchHistoryStore';
-import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 
 type SearchTextFieldProps = {
 	isFocused?: boolean;

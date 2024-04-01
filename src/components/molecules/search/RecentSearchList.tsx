@@ -1,7 +1,8 @@
+import { useSearchParams } from 'react-router-dom';
+
 import { SearchTag } from '@components/atoms';
 import { useSearchHistoryStore } from '@stores/searchHistoryStore';
 import { SearchQuery } from '@type/searchQuery';
-import { useSearchParams } from 'react-router-dom';
 
 const RecentSearchList = () => {
 	const searchHistory = useSearchHistoryStore(state => state.searchHistoryList);

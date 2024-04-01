@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { ImageWithCheck, ImageWithHeart, CardInfo } from '@components/atoms';
 import { ProductSimple } from '@models/product/entity/product';
-import { useNavigate } from 'react-router-dom';
 
 interface ProductCardProps extends ProductSimple {
 	size: 'small' | 'medium' | 'large';

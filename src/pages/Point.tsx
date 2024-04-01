@@ -1,3 +1,6 @@
+import { useQueryClient } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
+
 import { CaptionButton } from '@components/atoms';
 import { PointHeader } from '@components/molecules';
 import {
@@ -8,8 +11,6 @@ import { useGetAccountInfo } from '@hooks/apis/account';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import PageLayout from '@layouts/PageLayout';
 import { useBottomSheetStore } from '@stores/layerStore';
-import { useQueryClient } from '@tanstack/react-query';
-import { useNavigate } from 'react-router-dom';
 
 const Point = () => {
 	const navigate = useNavigate();

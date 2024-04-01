@@ -1,5 +1,6 @@
-import { IconButton } from '@components/atoms';
 import { useNavigate } from 'react-router-dom';
+
+import { IconButton } from '@components/atoms';
 
 const LeftLogoHeader = () => {
 	const navigate = useNavigate();

@@ -1,7 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 import { DefaultButton, SvgIcon } from '@components/index';
 import ClearLayout from '@layouts/ClearLayout';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
-import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
 	const navigate = useNavigate();

@@ -1,10 +1,11 @@
+import { useParams } from 'react-router-dom';
+
 import { KeyValueContainer } from '@components/atoms';
 import { DefaultKeyValueContainer } from '@components/molecules';
 import statusTag from '@constants/statusTag';
 import { useGetImageUploadDetailList } from '@hooks/apis/imageUpload';
 import PageLayout from '@layouts/PageLayout';
 import { getDataInYYYYMMDDSplitedByDot, getPointText } from '@utils/formatData';
-import { useParams } from 'react-router-dom';
 
 const ImageUploadDetail = () => {
 	const { buyId } = useParams();

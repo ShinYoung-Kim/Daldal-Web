@@ -1,10 +1,11 @@
+import { useInfiniteQuery, useSuspenseQuery } from '@tanstack/react-query';
+
 import {
 	getProductDetailList,
 	getProductSimpleList,
 	getRecommendedProductSimpleList,
 } from '@apis/product';
 import { CategoryName } from '@constants/categoryList';
-import { useInfiniteQuery, useSuspenseQuery } from '@tanstack/react-query';
 
 export const useGetProductSimpleList = (itemCategoryType?: CategoryName) => {
 	return useInfiniteQuery({

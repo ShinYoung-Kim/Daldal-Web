@@ -1,5 +1,6 @@
-import { search } from '@apis/search';
 import { useInfiniteQuery } from '@tanstack/react-query';
+
+import { search } from '@apis/search';
 
 export const useSearch = (keyword: string) => {
 	return useInfiniteQuery({

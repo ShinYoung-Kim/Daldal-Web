@@ -23,10 +23,10 @@ const AccountForm = ({ disabled, buttonInfo, isEditing }: AccountFormProps) => {
 
 	return (
 		<Form onSubmit={onSubmit} schema={accountSchema}>
-			<Form.Label label="유저" />
+			<Form.Label label="입금자명" />
 			<Form.Input name="USER" type="text" disabled={disabled} autoFocus />
 			<Form.HelperText name="USER" />
-			<Form.Label label="은행" />
+			<Form.Label label="은행명" />
 			<Form.BankButton disabled={disabled} />
 			<Form.Label label="계좌번호" />
 			<Form.Input name="ACCOUNT" type="number" disabled={disabled} />

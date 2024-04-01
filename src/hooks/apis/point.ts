@@ -1,10 +1,11 @@
+import { useMutation, useSuspenseQuery } from '@tanstack/react-query';
+
 import {
 	getCumulatedPoint,
 	getCurrentPoint,
 	getExpectedPoint,
 	postPointWithdraw,
 } from '@apis/point';
-import { useMutation, useSuspenseQuery } from '@tanstack/react-query';
 
 export const useGetCurrentPoint = () => {
 	return useSuspenseQuery({

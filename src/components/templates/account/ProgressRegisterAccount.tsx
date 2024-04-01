@@ -1,7 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 import { AccountForm } from '@components/organisms';
 import { useAccountInfoStore } from '@stores/formInfoStore';
 import { FormType } from '@type/form';
-import { useNavigate } from 'react-router-dom';
 
 const ProgressRegisterAccount = () => {
 	const { setAccountInfo, accountInfo, setEnterType } = useAccountInfoStore();

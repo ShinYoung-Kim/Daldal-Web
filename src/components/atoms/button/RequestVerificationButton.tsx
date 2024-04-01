@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
-import { useNavigate } from 'react-router-dom';
 
 const RequestVerificationButton = () => {
 	const navigate = useNavigate();

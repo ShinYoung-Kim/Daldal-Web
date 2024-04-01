@@ -1,6 +1,7 @@
+import { useMutation, useQuery } from '@tanstack/react-query';
+
 import { getAccountInfo, patchAccountInfo } from '@apis/account';
 import { AccountInfoRequestDTO } from '@models/account/request/accountInfoRequestDTO';
-import { useMutation, useQuery } from '@tanstack/react-query';
 import { getAccessToken } from '@utils/localStorage/token';
 
 export const useGetAccountInfo = () => {

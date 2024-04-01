@@ -1,3 +1,5 @@
+import { Route, Routes } from 'react-router-dom';
+
 import {
 	PreWithdrawal,
 	ProgressWithdrawal,
@@ -25,7 +27,6 @@ import {
 	WithdrawalResult,
 	WishList,
 } from '@pages/index';
-import { Route, Routes } from 'react-router-dom';
 
 const Routing = () => {
 	return (
