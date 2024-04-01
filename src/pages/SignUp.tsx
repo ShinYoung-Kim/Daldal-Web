@@ -1,4 +1,5 @@
 import { Button } from 'konsta/react';
+import { useNavigate } from 'react-router-dom';
 
 import {
 	AppleLoginButton,
@@ -8,7 +9,6 @@ import {
 import { SvgIcon } from '@components/common';
 import { LoginImageSlider } from '@components/molecules';
 import ClearLayout from '@layouts/ClearLayout';
-import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
 	const navigate = useNavigate();

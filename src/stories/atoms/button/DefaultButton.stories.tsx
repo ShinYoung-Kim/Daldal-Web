@@ -1,5 +1,6 @@
-import { DefaultButton } from '@components/atoms';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { DefaultButton } from '@components/atoms';
 
 const meta = {
 	title: 'atoms/button/DefaultButton',

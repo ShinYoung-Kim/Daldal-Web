@@ -1,6 +1,7 @@
+import { useParams } from 'react-router-dom';
+
 import PostSearch from '@components/templates/search/PostSearch';
 import PageLayout from '@layouts/PageLayout';
-import { useParams } from 'react-router-dom';
 
 const SearchResult = () => {
 	const { searchQuery } = useParams();

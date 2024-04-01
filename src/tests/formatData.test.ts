@@ -1,7 +1,8 @@
 import { describe } from 'node:test';
 
-import { getYoutubeIdFromUrl } from '@utils/formatData';
 import { expect, test } from 'vitest';
+
+import { getYoutubeIdFromUrl } from '@utils/formatData';
 
 describe('getYoutubeIdFromUrl 동작 테스트', () => {
 	test('youtube url이 embed url일 때 id가 정상적으로 추출되는지 확인합니다.', () => {

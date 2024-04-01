@@ -1,5 +1,6 @@
-import { Modal } from '@components/atoms';
 import { create } from 'zustand';
+
+import { Modal } from '@components/atoms';
 
 type BottomSheetType = 'login' | 'account' | 'bank' | 'imageUpload';
 

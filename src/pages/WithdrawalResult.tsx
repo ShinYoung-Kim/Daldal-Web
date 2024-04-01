@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom';
+
 import {
 	WithdrawalResultCompleted,
 	WithdrawalResultInProgress,
@@ -5,7 +7,6 @@ import {
 } from '@components/templates';
 import { useGetImageUploadDetailList } from '@hooks/apis/imageUpload';
 import PageLayout from '@layouts/PageLayout';
-import { useParams } from 'react-router-dom';
 
 const WithdrawalResult = () => {
 	const { resultId } = useParams();

@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import YouTube from 'react-youtube';
 
 import { BuyWithLikeButton, CardInfo } from '@components/atoms';
 import { SmallProductDetailImageSlider } from '@components/molecules';
@@ -10,8 +12,6 @@ import { useBuyButtonStore } from '@stores/buyButtonStore';
 import { useBottomSheetStore } from '@stores/layerStore';
 import { useProductStore } from '@stores/productStore';
 import { getYoutubeIdFromUrl } from '@utils/formatData';
-import { useParams } from 'react-router-dom';
-import YouTube from 'react-youtube';
 
 const ProductDetail = () => {
 	const { productId } = useParams();

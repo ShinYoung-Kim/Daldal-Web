@@ -1,6 +1,7 @@
-import { Account } from '@models/form/entity/account';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
+
+import { Account } from '@models/form/entity/account';
 
 type EnterType = 'EDIT' | 'REGISTER';
 

@@ -1,5 +1,6 @@
-import { CaptionButton } from '@components/atoms';
 import { Meta, StoryObj } from '@storybook/react';
+
+import { CaptionButton } from '@components/atoms';
 
 const meta = {
 	title: 'atoms/button/CaptionButton',

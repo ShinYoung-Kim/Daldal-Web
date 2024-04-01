@@ -1,7 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 import { DefaultButton } from '@components/atoms';
 import { SvgIcon } from '@components/common';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
-import { useNavigate } from 'react-router-dom';
 
 const PreRegisterAccount = () => {
 	const navigate = useNavigate();

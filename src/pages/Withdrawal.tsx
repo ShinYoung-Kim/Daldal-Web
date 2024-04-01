@@ -1,5 +1,6 @@
-import PageLayout from '@layouts/PageLayout';
 import { Outlet } from 'react-router-dom';
+
+import PageLayout from '@layouts/PageLayout';
 
 const Withdrawal = () => {
 	return (
