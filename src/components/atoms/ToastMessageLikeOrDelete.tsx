@@ -1,4 +1,5 @@
 import { Button } from 'konsta/react';
+import { useEffect } from 'react';
 
 import { SvgIcon } from '@components/common';
 import colors from '@constants/colors';
@@ -7,9 +8,13 @@ import { useNavigate } from 'react-router-dom';
 
 type ToastMessageLikeOrDeleteProps = {
 	like: boolean;
+	toastId: string;
 };
 
-const ToastMessageLikeOrDelete = ({ like }: ToastMessageLikeOrDeleteProps) => {
+const ToastMessageLikeOrDelete = ({
+	like,
+	toastId,
+}: ToastMessageLikeOrDeleteProps) => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
@@ -18,6 +23,12 @@ const ToastMessageLikeOrDelete = ({ like }: ToastMessageLikeOrDeleteProps) => {
 	};
 
 	const toastPadding = like ? 'px-3 py-1.5' : 'px-1.5 py-4 text-center';
+
+	useEffect(() => {
+		setTimeout(() => {
+			toast.dismiss(toastId);
+		}, 2000);
+	}, []);
 
 	return (
 		<div className={`w-full rounded-xl bg-White ${toastPadding}`}>

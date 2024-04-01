@@ -30,7 +30,7 @@ const HeartButton = ({ id, isDib, size, className }: HeartButtonProps) => {
 
 	const handleLikeHeart = () => {
 		if (isLogin()) {
-			toast(() => <ToastMessageLikeOrDelete like={!curLike} />, {
+			toast(t => <ToastMessageLikeOrDelete like={!curLike} toastId={t.id} />, {
 				duration: 2000,
 			});
 			setCurLike(prev => !prev);
