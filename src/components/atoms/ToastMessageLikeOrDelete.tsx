@@ -26,7 +26,7 @@ const ToastMessageLikeOrDelete = ({
 
 	useEffect(() => {
 		setTimeout(() => {
-			toast.dismiss(toastId);
+			toast.remove(toastId);
 		}, 2000);
 	}, []);
 
