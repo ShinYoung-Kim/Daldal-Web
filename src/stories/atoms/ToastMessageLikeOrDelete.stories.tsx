@@ -10,7 +10,7 @@ type ContainerType = {
 
 const Container = ({ like }: ContainerType) => {
 	const handleClick = () => {
-		toast(() => <ToastMessageLikeOrDelete like={like} />);
+		toast(t => <ToastMessageLikeOrDelete like={like} toastId={t.id} />);
 	};
 	return (
 		<>

@@ -1,4 +1,5 @@
 import { Button } from 'konsta/react';
+import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,9 +8,13 @@ import colors from '@constants/colors';
 
 type ToastMessageLikeOrDeleteProps = {
 	like: boolean;
+	toastId: string;
 };
 
-const ToastMessageLikeOrDelete = ({ like }: ToastMessageLikeOrDeleteProps) => {
+const ToastMessageLikeOrDelete = ({
+	like,
+	toastId,
+}: ToastMessageLikeOrDeleteProps) => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
@@ -18,6 +23,12 @@ const ToastMessageLikeOrDelete = ({ like }: ToastMessageLikeOrDeleteProps) => {
 	};
 
 	const toastPadding = like ? 'px-3 py-1.5' : 'px-1.5 py-4 text-center';
+
+	useEffect(() => {
+		setTimeout(() => {
+			toast.remove(toastId);
+		}, 2000);
+	}, []);
 
 	return (
 		<div className={`w-full rounded-xl bg-White ${toastPadding}`}>
