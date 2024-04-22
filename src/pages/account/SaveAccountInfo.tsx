@@ -7,6 +7,7 @@ import { usePatchAccountIfo } from '@hooks/apis/account';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
 import PageLayout from '@layouts/PageLayout';
 import { useAccountInfoStore } from '@stores/formInfoStore';
+import { RightHeaderType } from '@type/navigation';
 
 const SaveAccountInfo = () => {
 	const { accountInfo, clearAccountInfo, enterType } = useAccountInfoStore();
@@ -27,12 +28,21 @@ const SaveAccountInfo = () => {
 		EDIT: '정보를 한 번 더 확인해주세요!\n수정하시겠습니까?',
 	};
 
+	const rightTypeByAction = {
+		REGISTER: 'registerAccount',
+		EDIT: 'editAccount',
+	};
+
 	useEffect(() => {
 		return () => clearAccountInfo();
 	}, [clearAccountInfo]);
 
 	return (
-		<PageLayout className="px-6 py-[15px]" leftType="back">
+		<PageLayout
+			className="px-6 py-[15px]"
+			leftType="back"
+			rightType={rightTypeByAction[enterType] as RightHeaderType}
+		>
 			<div className="flex flex-col">
 				<DisabledAccountForm defaultValues={accountInfo} />
 				<div className="text-White typography-Body1 typography-M mt-[38px] whitespace-pre-line">
@@ -41,7 +51,7 @@ const SaveAccountInfo = () => {
 				<FixedBottomLayout childrenPadding="px-6" height="h-15">
 					<DefaultButton
 						title="저장하기"
-						color={{ bgColor: 'White', textColor: 'Black' }}
+						color={{ bgColor: 'Primary', textColor: 'White' }}
 						size="large"
 						onClick={handleRegisterAccountButtonClick}
 					/>

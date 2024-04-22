@@ -13,6 +13,7 @@ import {
 	FormProvider,
 	useFormContext,
 } from 'react-hook-form';
+import { twMerge } from 'tailwind-merge';
 
 import { DefaultButton } from '@components/atoms';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
@@ -82,14 +83,13 @@ const FormInput = ({
 
 	return (
 		<input
-			className={`w-full focus-visible:outline-none	
-				my-2 py-1 bg-transparent
-				text-White typography-Subhead
-				caret-transparent border-b-[3px]
-				${errors[name] ? 'border-b-Error' : 'border-b-White'}
-				${isFocused ? '' : 'border-b-transparent'}
-				[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-			`}
+			className={twMerge(
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				errors[name] && 'border-b-Error',
+				isFocused
+					? 'border-b-[3px] border-b-White text-White'
+					: 'border-b-Gray50 border-b-[1px] text-Gray10',
+			)}
 			onFocus={handleInputFocus}
 			inputMode={isNumber ? 'numeric' : 'text'}
 			type={type}
@@ -141,14 +141,13 @@ const FormPointInput = ({ name, autoFocus }: FormPointInputProps) => {
 
 	return (
 		<input
-			className={`w-full focus-visible:outline-none	
-				my-2 py-1 bg-transparent
-				text-White typography-Subhead
-				caret-transparent border-b-[3px]
-				${errors[name] ? 'border-b-Error' : 'border-b-White'}
-				${isFocused ? '' : 'border-b-transparent'}
-				[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-			`}
+			className={twMerge(
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-Gray10 typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				errors[name] && 'border-b-Error',
+				isFocused
+					? 'border-b-[3px] border-b-White text-White'
+					: 'border-b-Gray50 border-b-[1px]',
+			)}
 			onFocus={handleInputFocus}
 			inputMode="numeric"
 			type="string"
@@ -180,10 +179,10 @@ const FormBankButton = ({ disabled }: FormBankButtonProps) => {
 
 	return (
 		<Button
-			className="w-full my-2 py-1 bg-transparent text-White min-h-[38px] mb-8 pl-0 active:bg-transparent"
+			className="w-full my-2 py-1 bg-transparent min-h-[38px] mb-8 pl-0 active:bg-transparent border-b-[1px] border-b-Gray50 rounded-none"
 			onClick={handleBankButtonClick}
 		>
-			<span className="text-left w-full typography-Subhead">
+			<span className="text-left w-full typography-Subhead text-Gray10">
 				{accountInfo['BANK'] || defaultValue}
 			</span>
 		</Button>
@@ -196,7 +195,7 @@ type FormLabelProps = {
 
 const FormLabel = ({ label }: FormLabelProps) => {
 	return (
-		<label className="text-Gray20 typography-Body2 typography-R">{label}</label>
+		<label className="text-Gray50 typography-Body2 typography-R">{label}</label>
 	);
 };
 
@@ -213,7 +212,7 @@ const FormHelperText = ({ name }: FormHelperTextProps) => {
 		<span
 			className={`${
 				isError ? 'text-Error' : 'text-transparent'
-			} typography-Body2 typography-SB`}
+			} typography-Body2 typography-SB h-8`}
 		>
 			{isError ? String(errors[name]?.message) : 'no error'}
 		</span>

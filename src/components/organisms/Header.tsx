@@ -5,10 +5,11 @@ import {
 	RightDefaultHeader,
 	RightPointHeader,
 } from '@components/molecules';
+import { LeftHeaderType, RightHeaderType } from '@type/navigation';
 
 export type LeftHeaderProps = {
-	leftType: 'logo' | 'back' | 'home';
-	rightType?: 'default' | 'withdrawal' | 'imageUpload';
+	leftType: LeftHeaderType;
+	rightType?: RightHeaderType;
 };
 
 const Header = ({ leftType, rightType = 'default' }: LeftHeaderProps) => {
