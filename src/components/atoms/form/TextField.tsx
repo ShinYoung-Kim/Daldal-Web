@@ -196,7 +196,7 @@ type FormLabelProps = {
 
 const FormLabel = ({ label }: FormLabelProps) => {
 	return (
-		<label className="text-Gray20 typography-Body2 typography-R">{label}</label>
+		<label className="text-Gray50 typography-Body2 typography-R">{label}</label>
 	);
 };
 
@@ -213,7 +213,7 @@ const FormHelperText = ({ name }: FormHelperTextProps) => {
 		<span
 			className={`${
 				isError ? 'text-Error' : 'text-transparent'
-			} typography-Body2 typography-SB`}
+			} typography-Body2 typography-SB h-8`}
 		>
 			{isError ? String(errors[name]?.message) : 'no error'}
 		</span>
