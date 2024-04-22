@@ -41,7 +41,7 @@ const SaveAccountInfo = () => {
 				<FixedBottomLayout childrenPadding="px-6" height="h-15">
 					<DefaultButton
 						title="저장하기"
-						color={{ bgColor: 'White', textColor: 'Black' }}
+						color={{ bgColor: 'Primary', textColor: 'White' }}
 						size="large"
 						onClick={handleRegisterAccountButtonClick}
 					/>
