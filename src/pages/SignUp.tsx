@@ -6,7 +6,6 @@ import {
 	KakaoLoginButton,
 	SpeechBubble,
 } from '@components/atoms';
-import { SvgIcon } from '@components/common';
 import { LoginImageSlider } from '@components/molecules';
 import ClearLayout from '@layouts/ClearLayout';
 
@@ -19,7 +18,6 @@ const SignUp = () => {
 
 	return (
 		<ClearLayout className="flex flex-col justify-center items-center">
-			<SvgIcon id="app-logo-square" size={122} />
 			<LoginImageSlider />
 			<Button
 				className="!typography-Body3 !typography-M !text-Gray10 mb-3 !p-0"
