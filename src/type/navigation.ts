@@ -3,4 +3,6 @@ export type RightHeaderType =
 	| 'default'
 	| 'withdrawal'
 	| 'imageUpload'
-	| 'withdrawalHistory';
+	| 'withdrawalHistory'
+	| 'registerAccount'
+	| 'editAccount';

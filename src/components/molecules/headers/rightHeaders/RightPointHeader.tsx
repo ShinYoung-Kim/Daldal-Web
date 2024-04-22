@@ -9,6 +9,8 @@ const RightPointHeader = ({ pointType }: RightPointHeaderProps) => {
 		imageUpload: '구매 인증 포인트 내역',
 		withdrawalHistory: '포인트 출금 내역',
 		withdrawal: '포인트 출금하기',
+		registerAccount: '계정 등록하기',
+		editAccount: '계정 수정하기',
 	};
 
 	return (
