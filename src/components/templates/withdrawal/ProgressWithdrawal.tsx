@@ -1,4 +1,3 @@
-import { useQueryClient } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,20 +23,6 @@ const ProgressWithdrawal = () => {
 			mutate(data.POINT);
 		}
 	};
-
-	const queryClient = useQueryClient();
-	const point = queryClient.getQueryData(['currentPoint']);
-
-	console.log(pointSchema);
-
-	const updatedPointSchema = pointSchema.refine(data => {
-		if (typeof point === 'number') {
-			return data.POINT < point;
-		}
-		return false;
-	}, '보유한 포인트를 초과했어요.');
-
-	console.log(updatedPointSchema);
 
 	return (
 		<div className="text-White flex flex-col gap-6">
