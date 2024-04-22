@@ -1,18 +1,19 @@
+import { RightHeaderType } from '@type/navigation';
+
 type RightPointHeaderProps = {
-	pointType: 'imageUpload' | 'withdrawal';
+	pointType: Omit<RightHeaderType, 'default'>;
 };
 
 const RightPointHeader = ({ pointType }: RightPointHeaderProps) => {
-	const renderText = () => {
-		if (pointType === 'imageUpload') {
-			return '구매 인증 포인트 내역';
-		} else {
-			return '포인트 출금 내역';
-		}
+	const headerTitleMatching = {
+		imageUpload: '구매 인증 포인트 내역',
+		withdrawalHistory: '포인트 출금 내역',
+		withdrawal: '포인트 출금하기',
 	};
+
 	return (
 		<div className="absolute top-0 left-0 w-full py-4 flex justify-center typography-Body1 typography-M text-White">
-			{renderText()}
+			{headerTitleMatching[pointType as keyof typeof headerTitleMatching]}
 		</div>
 	);
 };
