@@ -11,7 +11,7 @@ const LoginImageSlider = () => {
 			{loginImagesList.map((image, idx) => (
 				<div key={`Image#${idx}`}>
 					<div style={{ position: 'relative' }}>
-						<img src={image} alt="login image" className="aspect-square" />
+						<img src={image} alt="login image" className="w-full h-auto" />
 					</div>
 				</div>
 			))}
