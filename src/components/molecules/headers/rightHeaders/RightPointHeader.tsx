@@ -5,9 +5,9 @@ type RightPointHeaderProps = {
 const RightPointHeader = ({ pointType }: RightPointHeaderProps) => {
 	const renderText = () => {
 		if (pointType === 'imageUpload') {
-			return '구매 인증 포인트';
+			return '구매 인증 포인트 내역';
 		} else {
-			return '포인트 출금';
+			return '포인트 출금 내역';
 		}
 	};
 	return (
