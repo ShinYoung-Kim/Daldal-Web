@@ -13,6 +13,7 @@ import {
 	FormProvider,
 	useFormContext,
 } from 'react-hook-form';
+import { twMerge } from 'tailwind-merge';
 
 import { DefaultButton } from '@components/atoms';
 import FixedBottomLayout from '@layouts/FixedBottomLayout';
@@ -82,14 +83,13 @@ const FormInput = ({
 
 	return (
 		<input
-			className={`w-full focus-visible:outline-none	
-				my-2 py-1 bg-transparent
-				text-White typography-Subhead
-				caret-transparent border-b-[3px]
-				${errors[name] ? 'border-b-Error' : 'border-b-White'}
-				${isFocused ? '' : 'border-b-transparent'}
-				[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-			`}
+			className={twMerge(
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-White typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				errors[name] && 'border-b-Error',
+				isFocused
+					? 'border-b-[3px] border-b-White'
+					: 'border-b-Gray50 border-b-[1px]',
+			)}
 			onFocus={handleInputFocus}
 			inputMode={isNumber ? 'numeric' : 'text'}
 			type={type}
@@ -141,14 +141,13 @@ const FormPointInput = ({ name, autoFocus }: FormPointInputProps) => {
 
 	return (
 		<input
-			className={`w-full focus-visible:outline-none	
-				my-2 py-1 bg-transparent
-				text-White typography-Subhead
-				caret-transparent border-b-[3px]
-				${errors[name] ? 'border-b-Error' : 'border-b-White'}
-				${isFocused ? '' : 'border-b-transparent'}
-				[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-			`}
+			className={twMerge(
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-White typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				errors[name] && 'border-b-Error',
+				isFocused
+					? 'border-b-[3px] border-b-White'
+					: 'border-b-Gray50 border-b-[1px]',
+			)}
 			onFocus={handleInputFocus}
 			inputMode="numeric"
 			type="string"
