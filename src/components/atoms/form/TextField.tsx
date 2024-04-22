@@ -84,11 +84,11 @@ const FormInput = ({
 	return (
 		<input
 			className={twMerge(
-				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-White typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
 				errors[name] && 'border-b-Error',
 				isFocused
-					? 'border-b-[3px] border-b-White'
-					: 'border-b-Gray50 border-b-[1px]',
+					? 'border-b-[3px] border-b-White text-White'
+					: 'border-b-Gray50 border-b-[1px] text-Gray10',
 			)}
 			onFocus={handleInputFocus}
 			inputMode={isNumber ? 'numeric' : 'text'}
@@ -142,10 +142,10 @@ const FormPointInput = ({ name, autoFocus }: FormPointInputProps) => {
 	return (
 		<input
 			className={twMerge(
-				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-White typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
+				'w-full focus-visible:outline-none my-2 py-1 bg-transparent text-Gray10 typography-Subhead caret-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-b-[1px] border-b-Gray50',
 				errors[name] && 'border-b-Error',
 				isFocused
-					? 'border-b-[3px] border-b-White'
+					? 'border-b-[3px] border-b-White text-White'
 					: 'border-b-Gray50 border-b-[1px]',
 			)}
 			onFocus={handleInputFocus}
@@ -179,10 +179,10 @@ const FormBankButton = ({ disabled }: FormBankButtonProps) => {
 
 	return (
 		<Button
-			className="w-full my-2 py-1 bg-transparent text-White min-h-[38px] mb-8 pl-0 active:bg-transparent"
+			className="w-full my-2 py-1 bg-transparent min-h-[38px] mb-8 pl-0 active:bg-transparent border-b-[1px] border-b-Gray50 rounded-none"
 			onClick={handleBankButtonClick}
 		>
-			<span className="text-left w-full typography-Subhead">
+			<span className="text-left w-full typography-Subhead text-Gray10">
 				{accountInfo['BANK'] || defaultValue}
 			</span>
 		</Button>
