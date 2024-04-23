@@ -1,6 +1,3 @@
-// import { IconButton } from '@components/atoms';
-// import colors from '@constants/colors';
-
 import { HeartButton } from '@components/atoms';
 
 type ImageWithCheckProps = {
