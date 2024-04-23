@@ -1,8 +1,4 @@
-import {
-	useInfiniteQuery,
-	useMutation,
-	useQueryClient,
-} from '@tanstack/react-query';
+import { useInfiniteQuery, useMutation } from '@tanstack/react-query';
 
 import {
 	deleteWishItem,
@@ -23,35 +19,15 @@ export const useGetWishListProductSimpleList = () => {
 };
 
 export const usePostWishItem = (errorCallback?: (error: Error) => void) => {
-	const queryClient = useQueryClient();
 	return useMutation({
 		mutationFn: (itemId: number) => postWishItem(itemId),
-		onSuccess: () => {
-			queryClient.removeQueries({
-				queryKey: ['wishListProductSimpleList'],
-			});
-			queryClient.invalidateQueries({ queryKey: ['productSimpleList'] });
-			queryClient.invalidateQueries({
-				queryKey: ['recommendedProductSimpleList'],
-			});
-		},
 		onError: errorCallback,
 	});
 };
 
 export const useDeleteWishItem = (errorCallback?: (error: Error) => void) => {
-	const queryClient = useQueryClient();
 	return useMutation({
 		mutationFn: (itemIds: number[]) => deleteWishItem(itemIds),
-		onSuccess: () => {
-			queryClient.removeQueries({
-				queryKey: ['wishListProductSimpleList'],
-			}),
-				queryClient.invalidateQueries({ queryKey: ['productSimpleList'] });
-			queryClient.invalidateQueries({
-				queryKey: ['recommendedProductSimpleList'],
-			});
-		},
 		onError: errorCallback,
 	});
 };
